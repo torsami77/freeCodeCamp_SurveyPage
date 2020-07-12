@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>CodeFoodie Survey Form</title>
+    <link rel="shortcut icon" type="image/icon" href="images/favicicon.png"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div class="main">
+      <i class="material-icons">&#60;/fastfood&#62;</i><br/>
+      <h1 id="title">CodeFoodie Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Enter Your Name</label><br/>
+          <input type="text" id="name" class="form-control" name="name" placeholder="Enter Your Name" required/><br/>
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Enter Your Email</label><br/>
+          <input type="email" id="email" class="form-control" name="email" placeholder="Enter Your Email"required/><br/>
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label">Enter Your Number</label><br/>
+          <input type="number" id="number" class="form-control" name="number" placeholder="Enter Your Number" min=11 max=11 required/><br/>
+        </div>
+        <div class="form-group">
+          <span>Please Select Your Gender:</span><br/>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label><br>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label><br>
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="other">Preferred not to say</label>
+        </div>
+        <div class="form-group">
+          <select id="dropdown" class="form-control">
+            <option selected disabled>Please Select Your Preferrence</option>
+            <option>Front End</option>
+            <option>Back End</option>
+            <option>Mobile</option>
+            <option>DevOps</option>
+            <option>Full Stack</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <span>What Would You Like To See Improved?</span><br/>
+          <input type="checkbox" id="front-end-projects" value="front-end-projects" />
+          <label for="front-end-projects">Front-End Projects</label><br/>
+          <input type="checkbox" id="back-end-projects" value="back-end-projects" />
+          <label for="back-end-projects">Back-End Projects</label><br/>
+          <input type="checkbox" id="mobile-projects" value="mobile-projects" />
+          <label for="mobile-projects">Mobile Projects</label><br/>
+          <input type="checkbox" id="dev-ops-projects" value="dev-ops-projects" />
+          <label for="dev-ops-projects">Dev-Ops Projects</label><br/>
+          <input type="checkbox" id="full-stack-projects" value="full-stack-projects" />
+          <label for="full-stack-projects">Full Stack Projects</label><br/>
+        </div>
+        <div class="form-group">
+          <label>Any comments or suggestions?</label><br/>
+          <textarea id="comment" class="form-control" placeholder="Enter your comments here..."></textarea>
+        </div>
+        <div class="form-group">
+          <button id="submit" class="form-control btn btn-primary mb-3">Submit</button>
+        </div>
+      </form>
+    </div>
+    <script  src="js/index.js"></script>
+  </body>
+</html>
